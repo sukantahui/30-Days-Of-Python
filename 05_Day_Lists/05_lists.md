@@ -8,8 +8,8 @@
   </a>
 
 <sub>Author:
-<a href="https://www.linkedin.com/in/sukantahui/" target="_blank">Sukanta Hui</a><br>
-<small> Second Edition: July, 2021</small>
+  <a href="https://www.linkedin.com/in/sukantahui/" target="_blank">Sukanta Hui</a><br>
+  <small> Second Edition: July, 2021</small>
 </sub>
 
 </div>
