@@ -16,6 +16,6 @@ print(type(3.14))                # Float
 print(type(1 + 3j))              # Complex
 print(type('CODER'))          # String
 print(type([1, 2, 3]))           # List
-print(type({'name':'Sukanta Hui'})) # Dictionary
+print(type({'name':'Sukanta Hui','age':46})) # Dictionary
 print(type({9.8, 3.14, 2.7}))    # Set
 print(type((9.8, 3.14, 2.7)))    # Tuple
