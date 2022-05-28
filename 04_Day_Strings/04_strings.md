@@ -75,8 +75,8 @@ print(multiline_string)
 We can connect strings together. Merging or connecting strings is called concatenation. See the example below:
 
 ```py
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Sukanta'
+last_name = 'Hui'
 space = ' '
 full_name = first_name  +  space + last_name
 print(full_name) # Asabeneh Yetayeh
@@ -158,8 +158,8 @@ This formatting is introduced in Python version 3.
 
 ```py
 
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Sukanta'
+last_name = 'Hui'
 language = 'Python'
 formated_string = 'I am {} {}. I teach {}'.format(first_name, last_name, language)
 print(formated_string)
@@ -344,11 +344,11 @@ print(challenge.rfind('th')) # 1
    More about string formatting check this [link](https://www.programiz.com/python-programming/methods/string/format)
 
 ```py
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
+first_name = 'Sukanta'
+last_name = 'Hui'
 age = 250
-job = 'teacher'
-country = 'Finland'
+job = 'Insurance Agent'
+country = 'India'
 sentence = 'I am {} {}. I am a {}. I am {} years old. I live in {}.'.format(first_name, last_name, age, job, country)
 print(sentence) # I am Asabeneh Yetayeh. I am 250 years old. I am a teacher. I live in Finland.
 
@@ -575,7 +575,7 @@ print(challenge.startswith('thirty')) # False
 34. Use a tab escape sequence to write the following lines.
     ```py
     Name      Age     Country   City
-    Asabeneh  250     Finland   Helsinki
+    Sukanta  250     Finland   Helsinki
     ```
 35. Use the string formatting method to display the following:
 
