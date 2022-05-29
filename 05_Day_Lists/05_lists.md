@@ -131,7 +131,7 @@ Number of countries: 5
 We access each item in a list using their index. A list index starts from 0. The picture below shows clearly where the index starts
 ![List index](../images/list_index.png)
 
-[Test]
+- [Test]
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
