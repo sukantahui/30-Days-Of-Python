@@ -1,3 +1,20 @@
+
+
+<div align="center">
+  <h1> 30 Days Of Python: Day 1 - Introduction</h1>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/sukantahui/">
+  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
+  </a>
+  <a class="header-badge" target="_blank" href="https://twitter.com/sukantahui">
+  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/sukantahui?style=social">
+  </a>
+
+<sub>Author:
+<a href="https://www.linkedin.com/in/sukantahui/" target="_blank">Sukanta Hui</a><br>
+<small> Second Edition: July, 2021</small>
+</sub>
+</div>
+
 # 🐍 Python Tutorial by CODER 
 
 |# Day | Topics                                                    |
@@ -35,21 +52,6 @@
 
 🧡🧡🧡 HAPPY CODING 🧡🧡🧡
 
-
-<div align="center">
-  <h1> 30 Days Of Python: Day 1 - Introduction</h1>
-  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/sukantahui/">
-  <img src="https://img.shields.io/badge/style--5eba00.svg?label=LinkedIn&logo=linkedin&style=social">
-  </a>
-  <a class="header-badge" target="_blank" href="https://twitter.com/sukantahui">
-  <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/sukantahui?style=social">
-  </a>
-
-<sub>Author:
-<a href="https://www.linkedin.com/in/sukantahui/" target="_blank">Sukanta Hui</a><br>
-<small> Second Edition: July, 2021</small>
-</sub>
-</div>
 
 
 [Day 2 >>](./02_Day_Variables_builtin_functions/02_variables_builtin_functions.md)
