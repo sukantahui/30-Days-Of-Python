@@ -330,9 +330,9 @@ A Python dictionary object is an unordered collection of data in a key value pai
 
 ```py
 {
-'first_name':'Asabeneh',
-'last_name':'Yetayeh',
-'country':'Finland', 
+'first_name':'Sukanta',
+'last_name':'Hui',
+'country':'India', 
 'age':250, 
 'is_married':True,
 'skills':['JS', 'React', 'Node', 'Python']
