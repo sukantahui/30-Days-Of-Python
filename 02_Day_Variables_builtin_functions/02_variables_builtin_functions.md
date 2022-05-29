@@ -101,18 +101,18 @@ _Example:_
 
 ```py
 # Variables in Python
-first_name = 'Asabeneh'
-last_name = 'Yetayeh'
-country = 'Finland'
-city = 'Helsinki'
-age = 250
+first_name = 'Sukanta'
+last_name = 'Hui'
+country = 'India'
+city = 'Barrackpore'
+age = 46
 is_married = True
 skills = ['HTML', 'CSS', 'JS', 'React', 'Python']
 person_info = {
-   'firstname':'Asabeneh',
-   'lastname':'Yetayeh',
-   'country':'Finland',
-   'city':'Helsinki'
+   'firstname':'Sukanta',
+   'lastname':'Hui',
+   'country':'India',
+   'city':'Barrackpore'
    }
 ```
 
@@ -152,7 +152,7 @@ Multiple variables can also be declared in one line:
 **Example:**
 
 ```py
-first_name, last_name, country, age, is_married = 'Asabeneh', 'Yetayeh', 'Helsink', 250, True
+first_name, last_name, country, age, is_married = 'Sukanta', 'Hui', 'Helsink', 46, True
 
 print(first_name, last_name, country, age, is_married)
 print('First name:', first_name)
@@ -234,7 +234,7 @@ print('num_float', float(num_str))  # 10.6
 
 # str to list
 first_name = 'Sukanta'
-print(first_name)               # 'Asabeneh'
+print(first_name)               # 'Sukanta'
 first_name_to_list = list(first_name)
 print(first_name_to_list)            # ['A', 's', 'a', 'b', 'e', 'n', 'e', 'h']
 ```
