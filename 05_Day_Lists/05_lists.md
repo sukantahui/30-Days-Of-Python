@@ -131,8 +131,7 @@ Number of countries: 5
 We access each item in a list using their index. A list index starts from 0. The picture below shows clearly where the index starts
 ![List index](../images/list_index.png)
 
-- [List Functions](#day-5)
-  - [append()	Adds an element at the end of the list]()
+
 
 ```py
 fruits = ['banana', 'orange', 'mango', 'lemon']
@@ -162,7 +161,8 @@ print(first_fruit)      # banana
 print(last_fruit)       # lemon
 print(second_last)      # mango
 ```
-
+- [List Functions]()
+  - [append()	Adds an element at the end of the list]()
 
 
 ### Unpacking List Items
