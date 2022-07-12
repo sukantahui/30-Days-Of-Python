@@ -9,221 +9,23 @@
   <link href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-  <style>
-    h1 {
-      color: green;
-      text-align: center;
-    }
-
-    .random_number {
-      margin: 50px;
-      font-size: 150px;
-      text-align: center;
-    }
-
-    button {
-      display: block;
-      margin: 0 auto;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- <h1>HUITECH</h1>
-  <div class="random_number"></div>
-  <button id="generate-random">Get a Random number using Python</button> -->
-  <form>
-    
-      
-  </form>  
-  <hr>
-  
-  <hr>
 
-  <form id="tag-form">
-    <div class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-9">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">TAG</label>
-        <div class="input-group">
-          <div class="input-group-text">Tag &nbsp; <i class='fa fa-barcode'></i> </div>
-          <input type="text" class="form-control text-right" name="tag_prefix" id="tag-prefix" placeholder="Prefix" />
-          <input type="text" class="form-control" name="tag" id="tag" placeholder="Tag" />
-          <button type="button" id="next-tag" class="btn btn-primary m-2">Next</button>
-        </div>
-      </div>
-    </div>  
-    <hr>
-    <div class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Model</div>
-          <input type="text" class="form-control" name="product_code" id="product-code" placeholder="Model" />
-        </div>
-      </div>
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Qty</div>
-          <input type="text" class="form-control" name="pieces" id="pieces" placeholder="PCs" />
-        </div>
-      </div>
-      
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Price Code</div>
-          <select class="form-select" name="price_code" id="price-code" aria-label="Default select example">
-            <option selected>Select Price Code</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="D">D</option>
-            <option value="E">E</option>
-            <option value="F">F</option>
-            <option value="G">G</option>
-            <option value="H">H</option>
-            <option value="I">I</option>
-            <option value="J">J</option>
-            <option value="K">K</option>
-            <option value="L">L</option>
-            <option value="M">M</option>
-            <option value="N">N</option>
-            <option value="O">O</option>
-            <option value="P">P</option>
-            <option value="Q">Q</option>
-            <option value="R">R</option>
-            <option value="S">S</option>
-            <option value="T">T</option>
-            <option value="U">U</option>
-            <option value="V">V</option>
-            <option value="W">W</option>
-            <option value="X">X</option>
-            <option value="Y">Y</option>
-            <option value="Z">Z</option>
-          </select>
-        </div>
-      </div>
 
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Gross Wt. <i class='fa fa-balance-scale'></i></div>
-          <input type="text" class="form-control" name="gross_weight" id="gross-weight" placeholder="Gross Weight" />
-        </div>
-      </div>
+  <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column">
 
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Gold Used</div>
-          <input type="text" class="form-control" name="gold_used" id="gold-used" placeholder="Gold Used" />
-        </div>
-      </div>
-      
-
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Fine Gold</div>
-          <input type="text" class="form-control" name="fine_gold" id="fine-gold" placeholder="Fine Gold" />
-        </div>
-      </div>
-    </div> 
-
-    <div class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Size</div>
-          <input type="text" class="form-control" name="size" id="size" placeholder="Size" />
-        </div>
-      </div>
-
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Price</div>
-          <input type="text" class="form-control" name="ploss" id="ploss" placeholder="Ploss" />
-        </div>
-      </div>
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Total Ploss</div>
-          <input type="text" class="form-control" name="total_ploss" id="total-ploss" placeholder="Total Ploss" />
-        </div>
-      </div>
-
-      
-    </div>   
-
-    <div class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Tonch</div>
-          <input type="number" class="form-control" name="tonch" value="92" id="tonch" placeholder="Tonch" />
-        </div>
-      </div>
-
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">LC</div>
-          <input type="text" class="form-control" name="lc" id="lc" placeholder="LC" />
-        </div>
-      </div>
-
-      <div class="col-3">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Total LC</div>
-          <input type="text" class="form-control" name="total_lc" id="total-lc" placeholder="Total LC" />
-        </div>
-      </div>
+    <div class="bloc_1 p-2 col-xl-6" style="background-color: red"> 
+      Left
     </div>
-
-    <div class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-12">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Customer</div>
-          <input type="text" class="form-control" value="SBJW"  name="cust_short_name" id="cust-short-name" placeholder="Short Name" />
-        </div>
-      </div>
-    </div>
-
-    <div class="row row-cols-lg-auto g-3 align-items-center">
-      <div class="col-12">
-        <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
-        <div class="input-group">
-          <div class="input-group-text">Brand</div>
-          <input type="text" class="form-control" value="BB"  name="brand" id="brand" placeholder="Brand" />
-        </div>
-      </div>
-    </div>
-
-  </form>
-
-  <hr>
-
   
+    <div class="bloc_2 p-2 col-xl-6" style="background-color: antiquewhite"> 
+      Right 
+    </div>
+  </div>
 
 
-
-
-
-
-
-
-
-  
-  <hr>
-  <button type="button" id="print-tag" class="btn btn-primary m-2">Print Tag &nbsp;<i class="fa fa-print"></i></button>
-  <button type="button" id="new-tag" class="btn btn-secondary m-2">New Tag &nbsp;<i class="fa fa-new"></i></button>
-
-  <hr>
 
   <script type="text/javascript" src="../eel.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
