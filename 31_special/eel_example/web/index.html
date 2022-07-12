@@ -8,7 +8,6 @@
   <title>Eel Example</title>
   <link href="node_modules/bootstrap/dist/css/bootstrap-grid.min.css" rel="stylesheet">
   <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
@@ -18,11 +17,12 @@
   <div class="d-flex flex-column" style="height: 100vh;">
     <div class="p-2">
       <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column">
-
-        <div class="bloc_1 p-2 col-xl-4" style="background-color: rgb(199, 192, 192)">
+        <!-- Left -->
+        <div class="p-2 col-xl-4" style="background-color: rgb(199, 192, 192)">
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label> <span class="bi bi-envelope"></span>
+              <label for="exampleInputEmail1" class="form-label">Email address</label> <span
+                class="bi bi-envelope"></span>
               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
@@ -37,9 +37,37 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
-
+        <!-- Right -->
         <div class="bloc_2 p-2 col-xl-8" style="background-color: antiquewhite">
-          Right
+          <form id="calculation-form">
+            <!-- Numbers are here -->
+            <div class="container-fluid d-flex flex-xl-row  flex-column">
+              <div class="mb-3">
+                <label for="number1" class="form-label">Number 1</label> <i class="bi bi-balloon-fill"></i>
+                <input type="number" class="form-control text-center" id="number1" aria-describedby="number1Help">
+                <div id="number1Help" class="form-text">Enter the first number</div>
+              </div>
+              <div class="mb-3">
+                <label for="number2" class="form-label">Number 2<i class="bi bi-balloon-fill"></i></label>
+                <input type="number" class="form-control text-center" id="number2" aria-describedby="number2Help">
+                <div id="number2Help" class="form-text">Enter the Second Number</div>
+              </div>
+              <!-- Answer -->
+              <div class="mb-3">
+                <label for="answer" class="form-label">Answer <i class="bi bi-bullseye"></i></label>
+                <input type="number" readonly class="form-control text-center" id="answer" aria-describedby="answerHelp">
+                <div id="answerHelp" class="form-text">Answer is here</div>
+              </div>
+            </div>
+            <!-- for buttons -->
+            <div class="container-fluid d-flex flex-xl-row justify-content-xl-between  flex-column">
+              <button id="add" type="button" class="col-2 btn btn-primary">Add</button>
+              <button id="sub" type="button" class="col-2 btn btn-secondary">Sub</button>
+              <button id="mul" type="button" class="col-2 btn btn-danger">Mul</button>
+              <button id="div" type="button" class="col-2 btn btn-warning">Div</button>
+              <button id="mod" type="button" class="col-2 btn btn-info">Mod</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>

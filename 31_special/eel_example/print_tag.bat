@@ -1,1 +1,0 @@
-rem tousb.exe tag.txt
