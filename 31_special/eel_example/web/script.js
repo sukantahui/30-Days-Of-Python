@@ -9,7 +9,15 @@
       eel.savePerson(personName,personAge)((response)=>{
         console.log(response)
       });
+    });  
+    
+    $("body").on("click", "#show-students", ()=> {
+      eel.showStudents()((response)=>{
+        console.log(response)
+      });
     });   
+
+
 
     $("body").on("click", "#add", ()=> {
       let num1 = $("#number1").val();

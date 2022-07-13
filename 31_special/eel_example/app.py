@@ -7,13 +7,18 @@ import uuid
 from random import randint
 from huiDatabase import Person
 from huiDatabase import People
+from huiDatabase import Database
 
 eel.init("web")
 
 people = People()
+database = Database()
+
+
 def write():
     file = open("binary.dat", 'wb')
-    x = {"students": [{"name": "Abcd","age": 23}, {"name": "Zxcv","age": 18}]}
+    x = {"students": [{"name": "Abcd", "age": 23},
+                      {"name": "Zxcv", "age": 18}]}
     pickle.dump(x, file)
     file.close()
 
@@ -27,11 +32,18 @@ def read():
 
 @eel.expose
 def savePerson(name, age):
-    # print("Perosn Name", name)
-    # print("Perosn age", age)
-    p1=Person(name,age)
-    people.add_person(p1.get_person())
-    print(people.get_people())
+    p1 = Person(name, age)
+    database.updateStudent(p1.get_person())
+
+    # people.add_person(p1.get_person())
+    # print(people.get_people())
+
+
+@eel.expose
+def showStudents():
+    print("Showing database")
+    print(database.getData())
+
 
 @eel.expose
 def sum(num1, num2):
