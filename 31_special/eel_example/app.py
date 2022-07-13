@@ -3,12 +3,14 @@ import requests
 import os
 import json
 import pickle
+import uuid
 from random import randint
-
+from huiDatabase import Person
+from huiDatabase import People
 
 eel.init("web")
 
-
+people = People()
 def write():
     file = open("binary.dat", 'wb')
     x = {"students": [{"name": "Abcd","age": 23}, {"name": "Zxcv","age": 18}]}
@@ -22,6 +24,14 @@ def read():
     file.close()
     print(x['students'][0])
 
+
+@eel.expose
+def savePerson(name, age):
+    # print("Perosn Name", name)
+    # print("Perosn age", age)
+    p1=Person(name,age)
+    people.add_person(p1.get_person())
+    print(people.get_people())
 
 @eel.expose
 def sum(num1, num2):

@@ -21,20 +21,16 @@
         <div class="p-2 col-xl-4" style="background-color: rgb(199, 192, 192)">
           <form>
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label> <span
+              <label for="person-name" class="form-label">Person Name</label> <span
                 class="bi bi-envelope"></span>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              <input type="text" class="form-control" id="person-name" aria-describedby="person-name-help">
+              <div id="person-name-help" class="form-text">Enter Person Name.</div>
             </div>
             <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
+              <label for="person-age" class="form-label">Age</label>
+              <input type="number" class="form-control" id="person-age">
             </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="button" id="save-person" class="btn btn-primary">Save Person</button>
           </form>
         </div>
         <!-- Right -->

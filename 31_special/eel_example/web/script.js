@@ -2,6 +2,15 @@
   
   $(function() {
 
+
+    $("body").on("click", "#save-person", ()=> {
+      let personName = $("#person-name").val();
+      let personAge = $("#person-age").val();
+      eel.savePerson(personName,personAge)((response)=>{
+        console.log(response)
+      });
+    });   
+
     $("body").on("click", "#add", ()=> {
       let num1 = $("#number1").val();
       let num2 = $("#number2").val();
