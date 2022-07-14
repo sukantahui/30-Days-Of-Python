@@ -4,6 +4,7 @@ import os
 import json
 import pickle
 import uuid
+import pymongo
 from random import randint
 from huiDatabase import Person
 from huiDatabase import People
@@ -41,6 +42,8 @@ def savePerson(name, age):
 
 @eel.expose
 def showStudents():
+    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    print(myclient.list_database_names())
     print("Showing database")
     print(database.getData())
 
