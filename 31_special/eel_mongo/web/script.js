@@ -3,7 +3,7 @@
 $(function () {
 
 
-  $("body").on("click", "#save-person", () => {
+  $("body").on("click", "#save-customer", () => {
     $.confirm({
       title: 'What is up?',
       content: 'Here goes a little content',
@@ -15,10 +15,10 @@ $(function () {
           keys: ['enter'],
           action: function () {
             console.log('the user clicked confirm');
-            let personName = $("#person-name").val();
-            let personAge = $("#person-age").val();
-            eel.savePerson(personName, personAge)((response) => {
-              console.log(response)
+            var data =  $("#customer-form").serialize();
+            console.log(data);
+            eel.saveCustomer(data)((response) => {
+              $('#customer-id').html("Customer ID: "+response);
             });
           }
         },

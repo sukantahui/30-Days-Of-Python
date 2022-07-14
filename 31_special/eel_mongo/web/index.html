@@ -20,18 +20,21 @@
       <div class="container-fluid d-flex flex-xl-row justify-content-xl-between flex-column">
         <!-- Left -->
         <div class="p-2 col-xl-4" style="background-color: rgb(199, 192, 192)">
-          <form>
+          <form id="customer-form">
+            <div class="mb-3">
+              <label class="form-label" id="customer-id">ID will be here</label>
+            </div>
             <div class="mb-3">
               <label for="person-name" class="form-label">Person Name</label> <span
                 class="bi bi-envelope"></span>
-              <input type="text" class="form-control" id="person-name" aria-describedby="person-name-help">
+              <input type="text" class="form-control" id="person-name" name="person_name" aria-describedby="person-name-help">
               <div id="person-name-help" class="form-text">Enter Person Name.</div>
             </div>
             <div class="mb-3">
               <label for="person-age" class="form-label">Age</label>
-              <input type="number" class="form-control" id="person-age">
+              <input type="number" class="form-control" id="person-age" name="person_age">
             </div>
-            <button type="button" id="save-person" class="btn btn-primary">Save Person</button>
+            <button type="button" id="save-customer" class="btn btn-primary">Save Person</button>
             <button type="button" id="show-students" class="btn btn-secondary">Show Students</button>
           </form>
         </div>

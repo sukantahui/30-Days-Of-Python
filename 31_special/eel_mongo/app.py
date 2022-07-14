@@ -32,9 +32,15 @@ def read():
 
 
 @eel.expose
-def savePerson(name, age):
-    p1 = Person(name, age)
-    database.updateStudent(p1.get_person())
+def saveCustomer(customerData):
+    data = dict(x.split("=") for x in customerData.split("&"))
+    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    mydb = myclient["institution"]
+    mycol = mydb["customers"]
+    print(mydb.list_collection_names())
+    x = mycol.insert_one(data)
+    inserted_id=str(x.inserted_id)
+    return inserted_id
 
     # people.add_person(p1.get_person())
     # print(people.get_people())
@@ -43,9 +49,12 @@ def savePerson(name, age):
 @eel.expose
 def showStudents():
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-    mydb = myclient["institution_db"]
+    mydb = myclient["institution"]
     mycol = mydb["customers"]
     print(mydb.list_collection_names())
+    mydict = { "name": "John", "address": "Highway 37" }
+    x = mycol.insert_one(mydict)
+    print(x.inserted_id)
 
 
 @eel.expose
