@@ -39,8 +39,21 @@ def saveCustomer(customerData):
     mycol = mydb["customers"]
     print(mydb.list_collection_names())
     x = mycol.insert_one(data)
-    inserted_id=str(x.inserted_id)
-    return inserted_id
+    inserted_id = str(x.inserted_id)
+    html = '<table class="table">'
+    html += '<thead>'
+    html += '<th>'+'Name'+'</th>'
+    html += '<th>'+'Age'+'</th>'
+    html += '</thead>'
+    html += '<tbody>'
+    for x in mycol.find():
+        html += '<tr>'
+        html = html + '<td>'+x['person_name']+'</td>'
+        html = html + '<td>'+x['person_age']+'</td>'
+        html += '</tr>'
+    html += '</tbody>'    
+    html += '</table>'
+    return {"current_id": inserted_id, "return_html": html}
 
     # people.add_person(p1.get_person())
     # print(people.get_people())
@@ -52,7 +65,7 @@ def showStudents():
     mydb = myclient["institution"]
     mycol = mydb["customers"]
     print(mydb.list_collection_names())
-    mydict = { "name": "John", "address": "Highway 37" }
+    mydict = {"name": "John", "address": "Highway 37"}
     x = mycol.insert_one(mydict)
     print(x.inserted_id)
 

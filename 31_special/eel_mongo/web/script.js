@@ -15,10 +15,23 @@ $(function () {
           keys: ['enter'],
           action: function () {
             console.log('the user clicked confirm');
-            var data =  $("#customer-form").serialize();
-            console.log(data);
-            eel.saveCustomer(data)((response) => {
-              $('#customer-id').html("Customer ID: "+response);
+            let form = document.querySelector('#customer-form');
+
+            // Get all field data from the form
+            // returns a FormData object
+            let data = new FormData(form);
+            let qryString="";
+            for (let [key, value] of data) {
+              if(qryString.length>0){
+                qryString+="&";
+              }
+              qryString=qryString+key+"="+value;
+            }
+            console.log(qryString);
+            // var data =  $("#customer-form").serialize();
+            eel.saveCustomer(qryString)((response) => {
+              $('#customer-id').html("Customer ID: "+response.current_id);
+              $('#customer-table-div').html(response.return_html);
             });
           }
         },
