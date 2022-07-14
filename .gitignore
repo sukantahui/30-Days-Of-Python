@@ -22,3 +22,8 @@ test.py
 /31_special/eel_example/web/node_modules/*
 /31_special/eel_example/.venv
 /31_special/eel_example/.venv/*
+
+/31_special/eel_mongo/web/node_modules
+/31_special/eel_mongo/web/node_modules/*
+/31_special/eel_mongo/.venv
+/31_special/eel_mongo/.venv/*

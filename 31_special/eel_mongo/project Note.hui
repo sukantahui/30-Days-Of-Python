@@ -1,0 +1,11 @@
+https://dev.to/kodark/executable-for-our-demo-application-48ol
+
+to create virtual environment
+python -m venv .venv
+
+
+To generate a requirements file, go into your original virtualenv, and run:
+pip freeze > requirements.txt
+
+activate your new virtualenv, and run:
+pip install -r requirements.txt
