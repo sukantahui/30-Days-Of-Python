@@ -5,8 +5,8 @@ $(function () {
 
   $("body").on("click", "#save-customer", () => {
     $.confirm({
-      title: 'What is up?',
-      content: 'Here goes a little content',
+      title: 'Save Customer',
+      content: 'Do you want to save?',
       type: 'green',
       buttons: {
         ok: {
@@ -31,7 +31,7 @@ $(function () {
             // var data =  $("#customer-form").serialize();
             eel.saveCustomer(qryString)((response) => {
               $('#customer-id').html("Customer ID: "+response.current_id);
-              $('#customer-table-div').html(response.return_html);
+              $('#customer-table-div').append(response.return_html);
             });
           }
         },
@@ -40,6 +40,11 @@ $(function () {
         }
       }
     });
+  });
+
+  $("body").on("click", ".select-cutomer", () => {
+    var d = $(this).attr('id');      
+    alert(d);
   });
 
   $("body").on("click", "#show-students", () => {

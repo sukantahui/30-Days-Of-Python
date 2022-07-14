@@ -1,3 +1,5 @@
+import gevent.monkey
+gevent.monkey.patch_all()
 import eel
 import requests
 import os
@@ -11,6 +13,9 @@ from huiDatabase import People
 from huiDatabase import Database
 
 eel.init("web")
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["institution"]
+customerCol = mydb["customers"]
 
 people = People()
 database = Database()
@@ -34,11 +39,10 @@ def read():
 @eel.expose
 def saveCustomer(customerData):
     data = dict(x.split("=") for x in customerData.split("&"))
-    myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-    mydb = myclient["institution"]
-    mycol = mydb["customers"]
-    print(mydb.list_collection_names())
-    x = mycol.insert_one(data)
+    # myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+    # mydb = myclient["institution"]
+    # mycol = mydb["customers"]
+    x = customerCol.insert_one(data)
     inserted_id = str(x.inserted_id)
     html = '<table class="table">'
     html += '<thead>'
@@ -46,13 +50,15 @@ def saveCustomer(customerData):
     html += '<th>'+'Age'+'</th>'
     html += '</thead>'
     html += '<tbody>'
-    for x in mycol.find():
+    for x in customerCol.find():
         html += '<tr>'
         html = html + '<td>'+x['person_name']+'</td>'
         html = html + '<td>'+x['person_age']+'</td>'
+        html = html + '<td>'+'<button k="100"  type="button"'+'id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
         html += '</tr>'
     html += '</tbody>'    
     html += '</table>'
+    html+= '<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">'
     return {"current_id": inserted_id, "return_html": html}
 
     # people.add_person(p1.get_person())
