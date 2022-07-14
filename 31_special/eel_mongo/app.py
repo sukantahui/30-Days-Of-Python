@@ -43,9 +43,9 @@ def savePerson(name, age):
 @eel.expose
 def showStudents():
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
-    print(myclient.list_database_names())
-    print("Showing database")
-    print(database.getData())
+    mydb = myclient["institution_db"]
+    mycol = mydb["customers"]
+    print(mydb.list_collection_names())
 
 
 @eel.expose
