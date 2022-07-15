@@ -46,22 +46,46 @@ def saveCustomer(customerData):
     x = customerCol.insert_one(data)
     inserted_id = str(x.inserted_id)
     html = (h1('Customer')).render()
-    html += '<table class="table">'
-    html += '<thead>'
-    html += '<th>'+'Name'+'</th>'
-    html += '<th>'+'Age'+'</th>'
-    html += '</thead>'
-    html += '<tbody>'
-    for x in customerCol.find():
-        # html += '<tr>'
-        # html = html + '<td>'+x['person_name']+'</td>'
-        # html = html + '<td>'+x['person_age']+'</td>'
-        # html = html + '<td>'+'<button name="button1"  type="button"'+'cust-id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
-        # html += '</tr>'
-        html += tr(td(x['person_name']),td(x['person_age']),td(button("test",cls="btn btn-primary"))).render()
-    html += '</tbody>'    
-    html += '</table>'
-    print(customerCol.find())
+    # html += '<table class="table">'
+    # html += '<thead>'
+    # html += '<th>'+'Name'+'</th>'
+    # html += '<th>'+'Age'+'</th>'
+    # html += '</thead>'
+    # html += '<tbody>'
+    # for x in customerCol.find():
+    #     # html += '<tr>'
+    #     # html = html + '<td>'+x['person_name']+'</td>'
+    #     # html = html + '<td>'+x['person_age']+'</td>'
+    #     # html = html + '<td>'+'<button name="button1"  type="button"'+'cust-id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
+    #     # html += '</tr>'
+    #     tr=tr()
+    #     td=td(x['person_name'])
+    #     tr.add(td)
+    #     html+=tr.render()
+    #     # td(x['person_age']),td(button("test",cls="btn btn-primary"))
+    # html += '</tbody>'    
+    # html += '</table>'
+    t = table()  # Insert a table
+    t.set_attribute('class','table')
+    with t:
+        with thead():
+            with th():
+                td('Name')
+                td('Age')
+        with tbody():
+            for x in customerCol.find():
+                with tr():
+                    first=0
+                    for i in x:
+                        with td(style="word-wrap: break-word;", halign="center", valign="top"):
+                            if(first>0):
+                                a(str(x[i]))
+                            first+=1    
+                    btn=button("Select")
+                    btn.set_attribute('class','btn btn-primary select-cutomer')
+                    btn.set_attribute('cust-id',x['_id'])
+                    td(btn)
+    html+=t.render()
 
     return {"current_id": inserted_id, "return_html": html}
 
