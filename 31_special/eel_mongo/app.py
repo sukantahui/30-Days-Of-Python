@@ -45,8 +45,7 @@ def saveCustomer(customerData):
     # mycol = mydb["customers"]
     x = customerCol.insert_one(data)
     inserted_id = str(x.inserted_id)
-    html = (h1('Hello, World!')).render()
-    # html = ""
+    html = (h1('Customer')).render()
     html += '<table class="table">'
     html += '<thead>'
     html += '<th>'+'Name'+'</th>'
@@ -54,14 +53,16 @@ def saveCustomer(customerData):
     html += '</thead>'
     html += '<tbody>'
     for x in customerCol.find():
-        html += '<tr>'
-        html = html + '<td>'+x['person_name']+'</td>'
-        html = html + '<td>'+x['person_age']+'</td>'
-        html = html + '<td>'+'<button name="button1"  type="button"'+'cust-id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
-        html += '</tr>'
+        # html += '<tr>'
+        # html = html + '<td>'+x['person_name']+'</td>'
+        # html = html + '<td>'+x['person_age']+'</td>'
+        # html = html + '<td>'+'<button name="button1"  type="button"'+'cust-id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
+        # html += '</tr>'
+        html += tr(td(x['person_name']),td(x['person_age']),td(button("test",cls="btn btn-primary"))).render()
     html += '</tbody>'    
     html += '</table>'
-    html+= '<input type="email" class="form-control" id="exampleInputEmail1" value="100" aria-describedby="emailHelp" placeholder="Enter email">'
+    print(customerCol.find())
+
     return {"current_id": inserted_id, "return_html": html}
 
     # people.add_person(p1.get_person())
