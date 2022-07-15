@@ -56,6 +56,12 @@ $(function () {
     });
   });
 
+  $("body").on("click", "#save-to-excel", () => {
+    eel.saveToExcel()((response) => {
+      console.log(response)
+    });
+  });
+
 
 
   $("body").on("click", "#add", () => {

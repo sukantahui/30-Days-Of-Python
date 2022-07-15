@@ -1,17 +1,17 @@
+from huiDatabase import Database
+from huiDatabase import People
+from huiDatabase import Person
+from random import randint
+from dominate.tags import *
+import pymongo
+import pandas as pd
+import pickle
+import json
+import os
+import requests
+import eel
 import gevent.monkey
 gevent.monkey.patch_all()
-import eel
-import requests
-import os
-import json
-import pickle
-import uuid
-import pymongo
-from dominate.tags import *
-from random import randint
-from huiDatabase import Person
-from huiDatabase import People
-from huiDatabase import Database
 
 eel.init("web")
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
@@ -63,34 +63,46 @@ def saveCustomer(customerData):
     #     tr.add(td)
     #     html+=tr.render()
     #     # td(x['person_age']),td(button("test",cls="btn btn-primary"))
-    # html += '</tbody>'    
+    # html += '</tbody>'
     # html += '</table>'
+
     t = table()  # Insert a table
-    t.set_attribute('class','table')
+    t.set_attribute('class', 'table table-striped')
     with t:
-        with thead():
+        with thead(cls="thead-dark"):
             with th():
                 td('Name')
                 td('Age')
         with tbody():
             for x in customerCol.find():
                 with tr():
-                    first=0
+                    first = 0
                     for i in x:
                         with td(style="word-wrap: break-word;", halign="center", valign="top"):
-                            if(first>0):
+                            if(first > 0):
                                 a(str(x[i]))
-                            first+=1    
-                    btn=button("Select")
-                    btn.set_attribute('class','btn btn-primary select-cutomer')
-                    btn.set_attribute('cust-id',x['_id'])
+                            first += 1
+                    btn = button("Select")
+                    btn.set_attribute(
+                        'class', 'btn btn-primary select-cutomer')
+                    btn.set_attribute('cust-id', x['_id'])
                     td(btn)
-    html+=t.render()
+    html += t.render()
 
     return {"current_id": inserted_id, "return_html": html}
 
     # people.add_person(p1.get_person())
     # print(people.get_people())
+
+
+@eel.expose
+def saveToExcel():
+    # df1 = pd.DataFrame([['a', 'b'], ['c', 'd']],
+    #                index=['row 1', 'row 2'],
+    #                columns=['col 1', 'col 2'])
+    df1=pd.DataFrame(customerCol.find())
+    df1.to_excel("output.xlsx")  
+    print("Save to excel")
 
 
 @eel.expose
