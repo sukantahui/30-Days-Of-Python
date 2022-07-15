@@ -31,7 +31,7 @@ $(function () {
             // var data =  $("#customer-form").serialize();
             eel.saveCustomer(qryString)((response) => {
               $('#customer-id').html("Customer ID: "+response.current_id);
-              $('#customer-table-div').append(response.return_html);
+              $('#customer-table-div').html(response.return_html);
             });
           }
         },
@@ -42,8 +42,12 @@ $(function () {
     });
   });
 
-  $("body").on("click", ".select-cutomer", () => {
-    var d = $(this).attr('id');      
+  $("#customer-table-div").on("click", ".select-cutomer", (event) => {
+    console.log(event);
+    // event.preventDefault();
+    // event.stopPropagation();
+    var d=$(event.currentTarget).attr('cust-id');
+    // var d = $(self).attr('data-value');      
     alert(d);
   });
 

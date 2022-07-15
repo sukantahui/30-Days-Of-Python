@@ -54,11 +54,11 @@ def saveCustomer(customerData):
         html += '<tr>'
         html = html + '<td>'+x['person_name']+'</td>'
         html = html + '<td>'+x['person_age']+'</td>'
-        html = html + '<td>'+'<button k="100"  type="button"'+'id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
+        html = html + '<td>'+'<button name="button1"  type="button"'+'cust-id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
         html += '</tr>'
     html += '</tbody>'    
     html += '</table>'
-    html+= '<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">'
+    html+= '<input type="email" class="form-control" id="exampleInputEmail1" value="100" aria-describedby="emailHelp" placeholder="Enter email">'
     return {"current_id": inserted_id, "return_html": html}
 
     # people.add_person(p1.get_person())
