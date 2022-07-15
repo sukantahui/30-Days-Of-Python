@@ -46,8 +46,7 @@ $(function () {
     console.log(event);
     // event.preventDefault();
     // event.stopPropagation();
-    var d=$(event.currentTarget).attr('cust-id');
-    // var d = $(self).attr('data-value');      
+    var d=$(event.currentTarget).attr('cust-id');     
     alert(d);
   });
 

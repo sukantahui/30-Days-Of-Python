@@ -7,6 +7,7 @@ import json
 import pickle
 import uuid
 import pymongo
+from dominate.tags import *
 from random import randint
 from huiDatabase import Person
 from huiDatabase import People
@@ -44,7 +45,9 @@ def saveCustomer(customerData):
     # mycol = mydb["customers"]
     x = customerCol.insert_one(data)
     inserted_id = str(x.inserted_id)
-    html = '<table class="table">'
+    html = (h1('Hello, World!')).render()
+    # html = ""
+    html += '<table class="table">'
     html += '<thead>'
     html += '<th>'+'Name'+'</th>'
     html += '<th>'+'Age'+'</th>'
