@@ -43,11 +43,14 @@ $(function () {
   });
 
   $("#customer-table-div").on("click", ".select-cutomer", (event) => {
-    console.log(event);
     // event.preventDefault();
     // event.stopPropagation();
     var d=$(event.currentTarget).attr('cust-id');     
-    alert(d);
+    eel.getCustomerById(d)((response)=>{
+      console.log(response._id);
+      console.log(response.person_name);
+      $("#customer-name").text(response.person_name);
+    });
   });
 
   $("body").on("click", "#show-students", () => {
@@ -58,7 +61,8 @@ $(function () {
 
   $("body").on("click", "#save-to-excel", () => {
     eel.saveToExcel()((response) => {
-      console.log(response)
+      console.log(response);
+      $('#graph-div').html(response.return_html);
     });
   });
 

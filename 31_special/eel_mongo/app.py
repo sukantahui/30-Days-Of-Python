@@ -4,8 +4,12 @@ from huiDatabase import Person
 from random import randint
 from dominate.tags import *
 import pymongo
+# importing ObjectId from bson library
+from bson.objectid import ObjectId
 import pandas as pd
+import matplotlib.pyplot as plt
 import pickle
+import random
 import json
 import os
 import requests
@@ -46,26 +50,6 @@ def saveCustomer(customerData):
     x = customerCol.insert_one(data)
     inserted_id = str(x.inserted_id)
     html = (h1('Customer')).render()
-    # html += '<table class="table">'
-    # html += '<thead>'
-    # html += '<th>'+'Name'+'</th>'
-    # html += '<th>'+'Age'+'</th>'
-    # html += '</thead>'
-    # html += '<tbody>'
-    # for x in customerCol.find():
-    #     # html += '<tr>'
-    #     # html = html + '<td>'+x['person_name']+'</td>'
-    #     # html = html + '<td>'+x['person_age']+'</td>'
-    #     # html = html + '<td>'+'<button name="button1"  type="button"'+'cust-id="'+str(x['_id'])+'"' +' class="btn btn-primary select-cutomer">Select</button>'+'</td>'
-    #     # html += '</tr>'
-    #     tr=tr()
-    #     td=td(x['person_name'])
-    #     tr.add(td)
-    #     html+=tr.render()
-    #     # td(x['person_age']),td(button("test",cls="btn btn-primary"))
-    # html += '</tbody>'
-    # html += '</table>'
-
     t = table()  # Insert a table
     t.set_attribute('class', 'table table-striped')
     with t:
@@ -94,6 +78,13 @@ def saveCustomer(customerData):
     # people.add_person(p1.get_person())
     # print(people.get_people())
 
+@eel.expose
+def getCustomerById(custId):
+    myquery = { "id": ObjectId("62d0216f23b4f8b620f6fca5") }
+    # customer = customerCol.find_one()
+    customer = customerCol.find_one(ObjectId(custId))
+    print(customer)
+    return customer
 
 @eel.expose
 def saveToExcel():
@@ -101,8 +92,19 @@ def saveToExcel():
     #                index=['row 1', 'row 2'],
     #                columns=['col 1', 'col 2'])
     df1=pd.DataFrame(customerCol.find())
-    df1.to_excel("output.xlsx")  
-    print("Save to excel")
+    df1.to_excel("output.xlsx",sheet_name='customers')  
+   
+    randomlist = []
+    for i in range(1,random.randint(1,10)):
+        n = random.randint(1,10)
+        randomlist.append(n)
+    s = pd.Series(randomlist)
+    fig, ax = plt.subplots()
+    s.plot.bar()
+    fig.savefig('web/my_plot.png')
+    html = h1(random.randint(1,10)).render()
+    html += img(src="my_plot.png").render()
+    return {"return_html": html}
 
 
 @eel.expose
