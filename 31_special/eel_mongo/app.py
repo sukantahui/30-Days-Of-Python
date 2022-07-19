@@ -56,6 +56,7 @@ def saveCustomer(customerData):
         with thead(cls="thead-dark"):
             with th():
                 td('Name')
+                td('type')
                 td('Age')
         with tbody():
             for x in customerCol.find():
