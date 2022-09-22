@@ -4,20 +4,27 @@ from huiDatabase import Person
 from random import randint
 from dominate.tags import *
 import pymongo
+
 # importing ObjectId from bson library
 from bson.objectid import ObjectId
+import os
+from dotenv import load_dotenv
+from dotenv import dotenv_values
 import pandas as pd
 import matplotlib.pyplot as plt
 import pickle
 import random
 import json
 import os
+import sys
 import requests
 import eel
 import gevent.monkey
 gevent.monkey.patch_all()
 
 eel.init("web")
+config = dotenv_values(".env")
+print(config)
 myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 mydb = myclient["institution"]
 customerCol = mydb["customers"]
@@ -79,37 +86,40 @@ def saveCustomer(customerData):
     # people.add_person(p1.get_person())
     # print(people.get_people())
 
+
 @eel.expose
 def getCustomerById(custId):
-    myquery = { "id": ObjectId("62d0216f23b4f8b620f6fca5") }
+    myquery = {"id": ObjectId("62d0216f23b4f8b620f6fca5")}
     # customer = customerCol.find_one()
     customer = customerCol.find_one(ObjectId(custId))
     print(customer)
     return customer
+
 
 @eel.expose
 def saveToExcel():
     # df1 = pd.DataFrame([['a', 'b'], ['c', 'd']],
     #                index=['row 1', 'row 2'],
     #                columns=['col 1', 'col 2'])
-    df1=pd.DataFrame(customerCol.find())
-    df1.to_excel("output.xlsx",sheet_name='customers')  
-   
+    df1 = pd.DataFrame(customerCol.find())
+    df1.to_excel("output.xlsx", sheet_name='customers')
+
     randomlist = []
-    for i in range(1,random.randint(1,10)):
-        n = random.randint(1,10)
+    for i in range(1, random.randint(1, 10)):
+        n = random.randint(1, 10)
         randomlist.append(n)
     s = pd.Series(randomlist)
     fig, ax = plt.subplots()
     s.plot.bar()
     fig.savefig('web/my_plot.png')
-    html = h1(random.randint(1,10)).render()
+    html = h1(random.randint(1, 10)).render()
     html += img(src="my_plot.png").render()
     return {"return_html": html}
 
 
 @eel.expose
 def showStudents():
+    print(sys.version)
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
     mydb = myclient["institution"]
     mycol = mydb["customers"]

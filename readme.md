@@ -59,7 +59,7 @@
 ![30DaysOfPython](./images/30DaysOfPython_banner3@2x.png)
 
 - [🐍 30 Days Of Python](#-30-days-of-python)
-- [📘 Day 1](#-day-1)
+- [📘 Introduction to Java](#-introduction-to-java)
   - [Welcome](#welcome)
   - [Introduction](#introduction)
   - [Why Python ?](#why-python-)
@@ -87,7 +87,7 @@
     - [Exercise: Level 2](#exercise-level-2)
     - [Exercise: Level 3](#exercise-level-3)
 
-# 📘 Day 1
+# 📘 Introduction to Java
 
 ## Welcome
 

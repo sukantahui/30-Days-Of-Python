@@ -47,13 +47,11 @@ def showStudents():
 
 @eel.expose
 def sum(num1, num2):
-    write()
     return int(num1)+int(num2)
 
 
 @eel.expose
 def sub(num1, num2):
-    read()
     return int(num1)-int(num2)
 
 
