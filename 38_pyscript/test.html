@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <title>My Todo</title>
+
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+
+  <body>
+    <section class="pyscript">
+        Hello world! <br>
+        This is the current date and time, as computed by Python:
+        <py-script>
+            from datetime import datetime
+            now = datetime.now()
+            display(now.strftime("%m/%d/%Y, %H:%M:%S"))
+        </py-script>
+        <py-script>display(5+7)</py-script>
+        <py-script>
+          import sys; display(f"Python {sys.version}")
+        </py-script>
+        <py-script>
+          import xml.etree.ElementTree as ET
+          ET.fromstring("&lt;person&gt;John Doe&lt;/person&gt;")
+          </py-script>
+    </section>
+  </body>
+</html>
+
+
