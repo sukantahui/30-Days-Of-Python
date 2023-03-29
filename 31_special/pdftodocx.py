@@ -5,7 +5,8 @@ doc_file = "python-lists.docx"
 
 
 path = easygui.fileopenbox()
-print(path)
+x,y=path.split('.')
+doc_file= x+"."+"docx"
 
 cv=Converter(path)
 cv.convert(doc_file)
