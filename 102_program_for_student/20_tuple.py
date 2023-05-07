@@ -1,0 +1,42 @@
+# tup1=(12,3,5,6,45,3,2,1,1,10)
+# tup2=(13,4,2,68,5,3)
+# print(len(tup1))
+# print(len(tup2))
+# print(id(tup2))
+# print(tup2.index(3))
+# print(tup2[2])
+# print(tup1[::-1])
+# print(tup1[7::-2])
+# sum=0
+# for i in tup2:
+#     sum+=i
+# print(sum)
+# list1=list(tup1)
+# print(list1)
+# list1.append(56)
+# tup1=tuple(list1)
+# print(tup1)
+# tup2=tup1+tup2
+# print(tup2)
+# print(id(tup2))
+# del(tup2)
+tup=()
+# print(tup)
+# brothers=('A','B','C')
+# print(brothers)
+# sisters=('D','E','F','G')
+# print(sisters)
+# siblings=brothers+sisters
+# print(siblings)
+# print(len(siblings))
+# list1=list(siblings)
+# list1.append('X')
+# list1.append('Y')
+family_members=tuple(list1)
+print(family_members)
+brothers=('Z','Y','X')
+(Z,Y,X)=brothers
+print(X)
+# fruits=('mango','lichi','lemon')
+# vegetables=('chilli','potato','carrot','bins')
+# animal=        
