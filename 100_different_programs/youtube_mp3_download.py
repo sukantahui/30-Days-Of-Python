@@ -13,9 +13,9 @@ video = yt.streams.filter(only_audio=True).first()
   
 # check for destination to save file
 print("Enter the Destination, a dialogue box will open: ")
-destination = easygui.diropenbox()
-print(destination)
-# destination="L:\MP3"
+# destination = easygui.diropenbox()
+# print(destination)
+destination="L:\MP3"
   
 # download the file
 mp3_file = video.download(output_path=destination)
