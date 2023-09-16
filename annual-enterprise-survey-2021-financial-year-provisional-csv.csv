@@ -1,0 +1,121 @@
+Year,Industry_aggregation_NZSIOC,Industry_code_NZSIOC,Industry_name_NZSIOC,Units,Variable_code,Variable_name,Variable_category,Value,Industry_code_ANZSIC06
+2021,Level 1,99999,All industries,Dollars (millions),H01,Total income,Financial performance,"757,504","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,"674,890","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,"49,593","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H07,Non-operating income,Financial performance,"33,020","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H08,Total expenditure,Financial performance,"654,404","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H09,Interest and donations,Financial performance,"26,138","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H10,Indirect taxes,Financial performance,"6,991","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H11,Depreciation,Financial performance,"27,801","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H12,Salaries and wages paid,Financial performance,"123,620","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H13,Redundancy and severance,Financial performance,275,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H14,Salaries and wages to self employed commission agents,Financial performance,"2,085","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"452,963","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H20,Non-operating expenses,Financial performance,"14,806","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H21,Opening stocks,Financial performance,"68,896","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H22,Closing stocks,Financial performance,"69,127","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H23,Surplus before income tax,Financial performance,"103,330","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H24,Total assets,Financial position,"2,512,677","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H25,Current assets,Financial position,"730,587","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H26,Fixed tangible assets,Financial position,"591,351","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H29,Other assets,Financial position,"1,190,739","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H30,Total equity and liabilities,Financial position,"2,512,677","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"813,949","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H32,Current liabilities,Financial position,"933,093","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars (millions),H33,Other liabilities,Financial position,"765,635","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars,H34,Total income per employee count,Financial ratios,"400,900","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Dollars,H35,Surplus per employee count,Financial ratios,"54,700","ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Percentage,H36,Current ratio,Financial ratios,78,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Percentage,H37,Quick ratio,Financial ratios,71,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Percentage,H39,Return on equity,Financial ratios,13,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Percentage,H40,Return on total assets,Financial ratios,4,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,99999,All industries,Percentage,H41,Liabilities structure,Financial ratios,32,"ANZSIC06 divisions A-S (excluding classes K6330, L6711, O7552, O760, O771, O772, S9540, S9601, S9602, and S9603)"
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H01,Total income,Financial performance,"48,731",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H04,Sales of goods and services,Financial performance,"45,650",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H05,"Interest, dividends and donations",Financial performance,640,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H06,"Government funding, grants and subsidies",Financial performance,279,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H07,Non-operating income,Financial performance,"2,163",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H08,Total expenditure,Financial performance,"40,696",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H09,Interest and donations,Financial performance,"2,409",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H10,Indirect taxes,Financial performance,489,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H11,Depreciation,Financial performance,"2,318",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H12,Salaries and wages paid,Financial performance,"6,202",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H13,Redundancy and severance,Financial performance,1,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"29,002",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H20,Non-operating expenses,Financial performance,275,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H21,Opening stocks,Financial performance,"14,215",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H22,Closing stocks,Financial performance,"14,215",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H23,Surplus before income tax,Financial performance,"8,034",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H24,Total assets,Financial position,"190,239",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H25,Current assets,Financial position,"35,038",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H26,Fixed tangible assets,Financial position,"108,875",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H29,Other assets,Financial position,"46,325",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H30,Total equity and liabilities,Financial position,"190,239",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"91,748",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H32,Current liabilities,Financial position,"33,218",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars (millions),H33,Other liabilities,Financial position,"65,274",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars,H34,Total income per employee count,Financial ratios,"419,000",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Dollars,H35,Surplus per employee count,Financial ratios,"69,100",ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Percentage,H36,Current ratio,Financial ratios,105,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Percentage,H37,Quick ratio,Financial ratios,63,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Percentage,H39,Return on equity,Financial ratios,9,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Percentage,H40,Return on total assets,Financial ratios,4,ANZSIC06 division A
+2021,Level 1,AA,"Agriculture, Forestry and Fishing",Percentage,H41,Liabilities structure,Financial ratios,48,ANZSIC06 division A
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H01,Total income,Financial performance,"5,394","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,"4,925","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,205,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H07,Non-operating income,Financial performance,264,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H08,Total expenditure,Financial performance,"4,374","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H09,Interest and donations,Financial performance,181,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H10,Indirect taxes,Financial performance,35,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H11,Depreciation,Financial performance,278,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H12,Salaries and wages paid,Financial performance,887,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H13,Redundancy and severance,Financial performance,0,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"2,970","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H20,Non-operating expenses,Financial performance,22,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H21,Opening stocks,Financial performance,353,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H22,Closing stocks,Financial performance,356,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H23,Surplus before income tax,Financial performance,"1,023","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H24,Total assets,Financial position,"16,790","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H25,Current assets,Financial position,"2,878","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H26,Fixed tangible assets,Financial position,"11,072","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H29,Other assets,Financial position,"2,841","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H30,Total equity and liabilities,Financial position,"16,790","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"8,200","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H32,Current liabilities,Financial position,"3,615","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars (millions),H33,Other liabilities,Financial position,"4,975","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars,H34,Total income per employee count,Financial ratios,"204,000","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Dollars,H35,Surplus per employee count,Financial ratios,"38,700","ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Percentage,H36,Current ratio,Financial ratios,80,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Percentage,H37,Quick ratio,Financial ratios,70,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Percentage,H39,Return on equity,Financial ratios,12,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Percentage,H40,Return on total assets,Financial ratios,6,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 3,AA11,Horticulture and Fruit Growing,Percentage,H41,Liabilities structure,Financial ratios,49,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H01,Total income,Financial performance,"5,394","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H04,"Sales, government funding, grants and subsidies",Financial performance,"4,925","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H05,"Interest, dividends and donations",Financial performance,205,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H07,Non-operating income,Financial performance,264,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H08,Total expenditure,Financial performance,"4,374","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H09,Interest and donations,Financial performance,181,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H10,Indirect taxes,Financial performance,35,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H11,Depreciation,Financial performance,278,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H12,Salaries and wages paid,Financial performance,887,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H13,Redundancy and severance,Financial performance,0,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H19,Purchases and other operating expenses,Financial performance,"2,970","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H20,Non-operating expenses,Financial performance,22,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H21,Opening stocks,Financial performance,353,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H22,Closing stocks,Financial performance,356,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H23,Surplus before income tax,Financial performance,"1,023","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H24,Total assets,Financial position,"16,790","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H25,Current assets,Financial position,"2,878","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H26,Fixed tangible assets,Financial position,"11,072","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H29,Other assets,Financial position,"2,841","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H30,Total equity and liabilities,Financial position,"16,790","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H31,Shareholders funds or owners equity,Financial position,"8,200","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H32,Current liabilities,Financial position,"3,615","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars (millions),H33,Other liabilities,Financial position,"4,975","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars,H34,Total income per employee count,Financial ratios,"204,000","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Dollars,H35,Surplus per employee count,Financial ratios,"38,700","ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Percentage,H36,Current ratio,Financial ratios,80,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA111,Horticulture and Fruit Growing,Percentage,H37,Quick ratio,Financial ratios,70,"ANZSIC06 groups A011, A012, and A013"
+2021,Level 4,AA211,Forestry and Logging,Dollars (millions),H26,Fixed tangible assets,Financial position,"5,385",ANZSIC06 group A030
