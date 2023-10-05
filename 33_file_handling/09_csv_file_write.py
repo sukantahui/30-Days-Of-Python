@@ -20,9 +20,7 @@ filename = path+"\\"+"university_records.csv"
 with open(filename, 'w') as csvfile: 
     # creating a csv writer object 
     csvwriter = csv.writer(csvfile) 
-        
     # writing the fields 
     csvwriter.writerow(fields) 
-        
     # writing the data rows 
     csvwriter.writerows(rows)
