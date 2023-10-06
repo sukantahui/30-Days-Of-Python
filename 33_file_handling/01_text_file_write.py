@@ -4,9 +4,10 @@
 
 
 import os
-os.system('cls')
 path=os.path.dirname(__file__)
 print(path)
 f=open(path+"\sukanta.txt","w")
-f.write("A quick brown fox jumps over the lazy dog.")
+data=input("Say something here: ")
+f.write(data)
+print("File created")
 f.close()
