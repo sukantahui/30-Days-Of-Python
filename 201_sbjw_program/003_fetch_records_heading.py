@@ -15,9 +15,8 @@ mycursor = mydb.cursor()
 #   print(x) 
 
 
-sql = "select * from agent_master"
-mycursor.execute(sql)
-num_fields = len(mycursor.description)
-print(num_fields)
-field_names = [i[0] for i in mycursor.description]
-print(field_names)
+sql = "select agent_id,short_name from agent_master where show_in_commission = %s and agent_category_id= %s"
+mycursor.execute(sql,(0,2,))
+for x in mycursor:
+    print(x)
+
