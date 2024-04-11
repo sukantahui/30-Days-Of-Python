@@ -1,0 +1,4 @@
+#!E:\30-Days-Of-Python\34_excel_handling\.venv\Scripts\python.exe
+"""Small script to execute the igraph command line interface"""
+from igraph.app.shell import main
+main()

@@ -1,0 +1,33 @@
+import mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="sukantahui",
+  database="marigold"
+) 
+
+mycursor = mydb.cursor()
+# data=mycursor.execute('select * from agent_master')
+# # print(mycursor.fetchall())
+
+# for x in mycursor:
+#   print(x) 
+
+
+sql = "INSERT INTO assets (assets_name, opening_balance) VALUES (%s, %s)"
+val = ("Fixed Assets", 10)
+mycursor.execute(sql, val)
+
+mydb.commit()
+
+print(mycursor.rowcount, "record inserted.")
+
+sql = "INSERT INTO assets (assets_name, opening_balance) VALUES (%s, %s)"
+val = [
+        ("ABCD", 20),
+        ("ZXVV", 10),
+        ("RAM ZXVV", 10)
+      ]
+mycursor.executemany(sql, val)
+mydb.commit()

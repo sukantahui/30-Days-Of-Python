@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 A quick brown fox jumps over the lazy dog.Sachin
 Sourav
 Virat
 Dhoni
 Sunil
+=======
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+>>>>>>> 5e82f9ae18cd1ee985890a08ddaaaeecdf3e25ff

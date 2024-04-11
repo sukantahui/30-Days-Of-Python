@@ -38,7 +38,11 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
+<<<<<<< HEAD
 VIRTUAL_ENV="D:\30-Days-Of-Python\.venv"
+=======
+VIRTUAL_ENV="E:\30-Days-Of-Python\.venv"
+>>>>>>> 5e82f9ae18cd1ee985890a08ddaaaeecdf3e25ff
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
