@@ -1,1 +1,2 @@
-A quick brown fox jumps over the lazy dog.
+Suparna is a good girl.
+The key function for working with files in Python is the open() function.
