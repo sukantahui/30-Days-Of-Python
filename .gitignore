@@ -19,6 +19,7 @@ numpy.ipynb
 .ipynb_checkpoints
 .vscode/
 test.py
+.venv
 /31_special/eel_example/web/node_modules
 /31_special/eel_example/web/node_modules/*
 /31_special/eel_example/.venv
