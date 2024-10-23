@@ -1,0 +1,7 @@
+    {
+        "question": "Who developed Python Programming Language?",
+        "options": ["Wick van Rossum','Rasmus Lerdorf','Guido van Rossum','Niene Stom"],
+        "answer": [3],
+        "subject": "Python",
+        "topic": "General"
+    }
