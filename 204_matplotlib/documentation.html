@@ -1,0 +1,164 @@
+1. Installation
+First, make sure you have matplotlib installed. You can install it using:
+
+
+
+pip install matplotlib
+2. Basic Plotting with pyplot
+The pyplot module in matplotlib is the most commonly used sub-module for creating plots. Import it as follows:
+
+
+import matplotlib.pyplot as plt
+3. Creating a Simple Line Plot
+Let’s start by plotting a simple line graph.
+
+
+import matplotlib.pyplot as plt
+
+# Sample data
+x = [1, 2, 3, 4, 5]
+y = [1, 4, 9, 16, 25]
+
+# Plotting the data
+plt.plot(x, y)
+
+# Adding labels
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.title("Simple Line Plot")
+
+# Show the plot
+plt.show()
+4. Customizing the Line Plot
+matplotlib allows you to customize the plot with colors, line styles, and markers:
+
+
+plt.plot(x, y, color="green", marker="o", linestyle="--", linewidth=2)
+plt.show()
+5. Creating a Scatter Plot
+A scatter plot can show the relationship between two sets of values.
+
+
+x = [5, 7, 8, 7, 2, 17, 2, 9, 4, 11, 12, 9, 6]
+y = [99, 86, 87, 88, 100, 86, 103, 87, 94, 78, 77, 85, 86]
+
+plt.scatter(x, y, color="purple", marker="x")
+plt.title("Simple Scatter Plot")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.show()
+
+6. Creating a Bar Chart
+Bar charts are useful for comparing quantities of different categories.
+
+
+# Sample data
+categories = ["A", "B", "C", "D", "E"]
+values = [3, 7, 8, 5, 4]
+
+plt.bar(categories, values, color="blue")
+plt.title("Simple Bar Chart")
+plt.xlabel("Categories")
+plt.ylabel("Values")
+plt.show()
+7. Creating a Histogram
+Histograms are used to represent the frequency distribution of numerical data.
+
+
+import numpy as np
+
+# Generating random data
+data = np.random.randn(1000)
+
+plt.hist(data, bins=30, color="orange", edgecolor="black")
+plt.title("Histogram")
+plt.xlabel("Value")
+plt.ylabel("Frequency")
+plt.show()
+8. Creating a Pie Chart
+Pie charts are useful to show proportions.
+
+
+# Sample data
+labels = ["A", "B", "C", "D"]
+sizes = [15, 30, 45, 10]
+
+plt.pie(sizes, labels=labels, autopct="%1.1f%%", startangle=90)
+plt.title("Simple Pie Chart")
+plt.show()
+9. Subplots
+Subplots allow you to display multiple plots in a single figure.
+
+
+# Sample data
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+# Creating subplots
+plt.figure(figsize=(10, 5))
+
+# First subplot
+plt.subplot(1, 2, 1)
+plt.plot(x, y1, "r-")
+plt.title("Sine Wave")
+
+# Second subplot
+plt.subplot(1, 2, 2)
+plt.plot(x, y2, "b-")
+plt.title("Cosine Wave")
+
+plt.show()
+10. Adding Legends, Grid, and Annotations
+
+
+
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
+
+plt.plot(x, y1, label="Sine")
+plt.plot(x, y2, label="Cosine")
+plt.xlabel("X-axis")
+plt.ylabel("Y-axis")
+plt.title("Plot with Legend and Grid")
+
+# Adding a legend
+plt.legend()
+
+# Adding a grid
+plt.grid(True)
+
+# Adding an annotation
+plt.annotate("Maximum", xy=(1.57, 1), xytext=(3, 1.5),
+             arrowprops=dict(facecolor="black", shrink=0.05))
+
+plt.show()
+11. Saving Plots
+You can save plots to an image file using savefig().
+
+
+plt.plot(x, y1)
+plt.title("Sine Wave")
+plt.savefig("sine_wave.png", dpi=300)
+plt.show()
+12. Working with 3D Plots (Optional)
+To create 3D plots, import Axes3D from mpl_toolkits.mplot3d.
+
+
+from mpl_toolkits.mplot3d import Axes3D
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection="3d")
+
+# Sample data
+x = np.linspace(-5, 5, 100)
+y = np.linspace(-5, 5, 100)
+X, Y = np.meshgrid(x, y)
+Z = np.sin(np.sqrt(X**2 + Y**2))
+
+# Plotting a surface
+ax.plot_surface(X, Y, Z, cmap="viridis")
+
+plt.show()
+This covers the basics of using matplotlib.
