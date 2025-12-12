@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 A quick brown fox jumps over the lazy dog.Sachin
 Sourav
 Virat
 Dhoni
 Sunil
-=======
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
->>>>>>> 5e82f9ae18cd1ee985890a08ddaaaeecdf3e25ff
+& C:/Users/USER/AppData/Local/Microsoft/WindowsApps/python3.13.exe e:/30-Days-Of-Python/33_file_handling/01_text_file_write.py
